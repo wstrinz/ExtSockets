@@ -9,7 +9,8 @@ Ext.onReady(function() {
     // Very basic bassword validation.
     // Note that length validation is managed by ExtJs itself --
     // scroll down to see how in the field properties
-    socket = new WebSocket("ws://localhost:3000/chat/sendmsg")
+    // console.log(window.location.host)
+    socket = new WebSocket("ws://" + window.location.host + "/chat/sendmsg")
 
     socket.onopen = function() {
       console.log('the sockets are open')
