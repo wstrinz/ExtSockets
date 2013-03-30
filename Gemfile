@@ -6,7 +6,8 @@ gem 'rails', '4.0.0.beta1'
 gem 'sqlite3'
 
 group :production do
-  gem 'pg'
+  # gem 'pg'
+  gem 'shelly-dependencies'
 end
 
 # Gems used only for assets and not required
